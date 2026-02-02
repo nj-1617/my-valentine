@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffc0cb, #ffb6c1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* pink heart background design */
+    .heart {
+      position: absolute;
+      color: rgba(255, 105, 180, 0.25);
+      font-size: 24px;
+      animation: float 8s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.4);
+        opacity: 0;
+      }
+    }
+
+    /* cute tilapia cat */
+    .tilapia-cat {
+      position: absolute;
+      font-size: 42px;
+      opacity: 0.25;
+      animation: floatCat 12s linear infinite;
+    }
+
+    @keyframes floatCat {
+      0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+      }
+      20% { opacity: 0.3; }
+      100% {
+        transform: translateY(-15vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.4);
+        opacity: 0;
+      }
+    }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px 50px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      z-index: 2;
+    }
+
+    h1 {
+      color: #e75480;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+      25% { transform: rotate(3deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    button {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .yes {
+      background: #ff69b4;
+      color: white;
+    }
+
+    .no {
+      background: #f2f2f2;
+      color: #555;
+      position: relative;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* sunflower decoration */
+    .sunflower {
+      position: absolute;
+      font-size: 28px;
+      opacity: 0.9;
+    }
+
+    .left {
+      left: 10px;
+    }
+
+    .right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- floating hearts background -->
+  <div class="heart" style="left:5%; animation-delay:0s;">💗</div>
+  <div class="heart" style="left:15%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:25%; animation-delay:4s;">💕</div>
+  <div class="heart" style="left:35%; animation-delay:1s;">💗</div>
+  <div class="heart" style="left:45%; animation-delay:3s;">💖</div>
+  <div class="heart" style="left:55%; animation-delay:5s;">💕</div>
+  <div class="heart" style="left:65%; animation-delay:2s;">💗</div>
+  <div class="heart" style="left:75%; animation-delay:4s;">💖</div>
+  <div class="heart" style="left:85%; animation-delay:1s;">💕</div>
+
+  <!-- cute tilapia cats floating -->
+  <div class="tilapia-cat" style="left:10%; animation-delay:0s;">🐱🐟</div>
+  <div class="tilapia-cat" style="left:30%; animation-delay:4s;">🐱🐟</div>
+  <div class="tilapia-cat" style="left:50%; animation-delay:2s;">🐱🐟</div>
+  <div class="tilapia-cat" style="left:70%; animation-delay:6s;">🐱🐟</div>
+  <div class="tilapia-cat" style="left:90%; animation-delay:3s;">🐱🐟</div>
+
+  <!-- Sunflowers on the left side -->
+  <div class="sunflower left" style="top: 5%;">🌻</div>
+  <div class="sunflower left" style="top: 15%;">🌻</div>
+  <div class="sunflower left" style="top: 25%;">🌻</div>
+  <div class="sunflower left" style="top: 35%;">🌻</div>
+  <div class="sunflower left" style="top: 45%;">🌻</div>
+  <div class="sunflower left" style="top: 55%;">🌻</div>
+  <div class="sunflower left" style="top: 65%;">🌻</div>
+  <div class="sunflower left" style="top: 75%;">🌻</div>
+  <div class="sunflower left" style="top: 85%;">🌻</div>
+
+  <!-- Sunflowers on the right side -->
+  <div class="sunflower right" style="top: 5%;">🌻</div>
+  <div class="sunflower right" style="top: 15%;">🌻</div>
+  <div class="sunflower right" style="top: 25%;">🌻</div>
+  <div class="sunflower right" style="top: 35%;">🌻</div>
+  <div class="sunflower right" style="top: 45%;">🌻</div>
+  <div class="sunflower right" style="top: 55%;">🌻</div>
+  <div class="sunflower right" style="top: 65%;">🌻</div>
+  <div class="sunflower right" style="top: 75%;">🌻</div>
+  <div class="sunflower right" style="top: 85%;">🌻</div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1>Will you be my Valentine, love? 💖</h1>
+    <div class="buttons">
+      <!-- tilapia cat image (place image file in same folder and name it tilapia.png) -->
+      
+      <button class="yes" onclick="alert('YEEEYYYYYY! I LOVEEEEE YOOOUUUUUUU, WIFEEEYY KOOO	 💕🌻')">Yes</button>
+      <button class="no" id="noBtn">No</button>
+    </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById('noBtn');
+
+    noBtn.addEventListener('mouseover', () => {
+      const x = Math.random() * 200 - 100;
+      const y = Math.random() * 200 - 100;
+      noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  </script>
+
+</body>
+</html>
